@@ -1,0 +1,76 @@
+POST http://192.168.0.10:8080/api/v1/exam
+Content-Type: application/json
+
+{
+    "exam":{
+        "questions":[
+            {
+                "number":0,
+                "text":"What is the third planet in the solar system?",
+                
+                "options":
+                [
+                    {
+                        "number":0,
+                        "text":"Mercury",
+                        "isCorrect":false
+                    },
+                    {
+                        "number":1,
+                        "text":"Venus",
+                        "isCorrect":false
+                    },
+                    {
+                        "number":2,
+                        "text":"Earth",
+                        "isCorrect":true
+                    },
+                    {
+                        "number":3,
+                        "text":"Mars",
+                        "isCorrect":false
+                    }
+                ]
+            },
+            {
+                "number":0,
+                "text":"What is the first planet in the solar system?",
+                
+                "options":
+                [
+                    {
+                        "number":0,
+                        "text":"Mercury",
+                        "isCorrect":true
+                    },
+                    {
+                        "number":1,
+                        "text":"Venus",
+                        "isCorrect":false
+                    },
+                    {
+                        "number":2,
+                        "text":"Earth",
+                        "isCorrect":false
+                    },
+                    {
+                        "number":3,
+                        "text":"Mars",
+                        "isCorrect":false
+                    }
+                ]
+            }
+            
+        ],
+        "marks":4,
+    "negMarks":-1,
+    "subject":"Geography",
+    "setBy":"Sayar Bhattacharyya",
+    "pattern": "Single Correct Jee Mains Type"
+    }
+}
+
+
+
+###
+GET http://192.168.0.10:8080/api/v1/exam/ASD123
