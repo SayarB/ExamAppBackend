@@ -14,6 +14,7 @@ router.get("/exam/:id",async (req, res)=>
 })
 router.post("/exam", (req,res)=>
 {
+    
     const examData = req.body.exam
     
     
@@ -28,6 +29,18 @@ router.post("/exam", (req,res)=>
         })
     
 
+})
+
+router.get("/exam", async(req,res)=>
+{
+    try{
+    const allExams= await Exam.find({});
+    res.status(200).json(allExams);
+    }
+    catch(err)
+    {
+        res.status(500).send(err);
+    }
 })
 module.exports=router;
 

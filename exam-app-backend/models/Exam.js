@@ -32,6 +32,7 @@ const QuestionSchema = mongoose.Schema(
 const ExamSchema = mongoose.Schema(
     {
         questions: [{type: QuestionSchema}],
+        name: String,
         marks: Number,
         negMarks: Number,
         subject: String,

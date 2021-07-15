@@ -62,6 +62,7 @@ Content-Type: application/json
             }
             
         ],
+        "name": "Solar System Test 1",
         "marks":4,
     "negMarks":-1,
     "subject":"Geography",
@@ -73,4 +74,7 @@ Content-Type: application/json
 
 
 ###
-GET http://192.168.0.10:8080/api/v1/exam/ASD123
+GET http://192.168.0.10:8080/api/v1/exam/60ec1bffb02f1d19842a0672
+
+###
+GET http://192.168.0.10:8080/api/v1/exam
